@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/archives/</loc>
+    <loc>https://tpo-manit.github.io/bluebook/archives/</loc>
   </url><url>
-    <loc>/</loc>
+    <loc>https://tpo-manit.github.io/bluebook/</loc>
   </url><url>
-    <loc>/responses/bluebook/</loc>
+    <loc>https://tpo-manit.github.io/bluebook/responses/bluebook/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://tpo-manit.github.io/bluebook/categories/</loc>
   </url><url>
-    <loc>/companies/</loc>
+    <loc>https://tpo-manit.github.io/bluebook/companies/</loc>
   </url><url>
-    <loc>/profiles/</loc>
+    <loc>https://tpo-manit.github.io/bluebook/profiles/</loc>
   </url><url>
-    <loc>/responses/</loc>
+    <loc>https://tpo-manit.github.io/bluebook/responses/</loc>
   </url><url>
-    <loc>/search/</loc>
+    <loc>https://tpo-manit.github.io/bluebook/search/</loc>
   </url><url>
-    <loc>/series/</loc>
+    <loc>https://tpo-manit.github.io/bluebook/series/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://tpo-manit.github.io/bluebook/tags/</loc>
   </url>
 </urlset>

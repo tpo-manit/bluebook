@@ -1,0 +1,56 @@
+{
+  "timestamp": "2024-12-03T21:49:33.867Z",
+  "email": "211112267@stu.manit.ac.in",
+  "data": {
+    "Name": [
+      "Pavit Chhabra"
+    ],
+    "Linkedin Profile (if interested)": [
+      "https://www.linkedin.com/in/pavitchhabrawork/"
+    ],
+    "CV/Resume (if interested)": [],
+    "CGPA at the time of Selection (if interested) ": [
+      "8.72"
+    ],
+    "Company Appeared For": [
+      "Meesho"
+    ],
+    "Placement Profile": [
+      "SDE"
+    ],
+    "Mode of Online Assessment": [
+      "Online"
+    ],
+    "Online Assessment Difficulty (out of 5)": [
+      "3"
+    ],
+    "Online Assessment Round Questions": [
+      "There were 3 questions, \none was given a street with x points, find the minimum number of lights to illuminate all points given each lamp can illuminate an arc of Y length, this is on leetcode and is binary serach, the idea is to place lamps to the rightmost point possible everytime to maximize their utility.\nI can't recall the other two questions but one was easy greedy and one was parsing, like the httpserver questions, I did that one in python."
+    ],
+    "Mode of Interview(s)": [
+      "Online"
+    ],
+    "Number of Interview Rounds": [
+      "2"
+    ],
+    "Interview Experience": [
+      "The first round was a machine coding round, I was asked to design splitwise given a set of requirements. I solve this in cpp, remember to demonstrate good OOPs practices and at the same time make sure to pass the given testcases.\n\nThe second round was more of a connect and than an interview but it involved deep CV review and was inclined towards discussing my summer internship."
+    ],
+    "Level of Difficulty of Interview(s)": [
+      "2"
+    ],
+    "Tips/Sources for Interview Preparation": [
+      "Practice some LLD/Machine Coding questions before giving the interviews as they are guaranteed to ask one in the first round.\nStudy OOPs deeply in whatever language you're choosing and become comfortable with it's syntax.\nTry to implement separation of concerns in your classes.\nFor the second round be thorough with your resume."
+    ],
+    "Were Society Position of Responsibility given any Importance?": [
+      "No"
+    ],
+    "Did the Interviewer(s) Focus on asking questions from CV/Resume": [
+      "Yes"
+    ],
+    "Were the interview questions relevant to the JD Circulated? (if applicable)": [],
+    "Any other relevant information": [
+      "was selected for a 6M + FTE Offer."
+    ]
+  }
+}

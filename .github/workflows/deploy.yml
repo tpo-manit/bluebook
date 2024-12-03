@@ -6,10 +6,10 @@ on:
     branches:
       - main
     paths:
-      - 'contents/**'
+      - 'content/**'
   pull_request:
     paths:
-      - 'contents/**'
+      - 'content/**'
   workflow_dispatch:
 
 jobs:

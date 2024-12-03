@@ -1,4 +1,4 @@
-baseURL: 
+baseURL: "https://tpo-manit.github.io/bluebook/" 
 title: Bluebook
 languageCode: en-us
 paginate: 5

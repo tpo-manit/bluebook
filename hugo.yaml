@@ -1,0 +1,119 @@
+baseURL: 
+title: Bluebook
+languageCode: en-us
+paginate: 5
+theme: [PaperMod]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["responses", "bluebook"]
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+      company: companies
+      profile: profiles
+    menu:
+      main:
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Companies
+          url: companies/
+          weight: 10
+        - name: Profiles
+          url: profiles/
+          weight: 10
+        - name: TNP
+          url: https://www.manit.ac.in/training-placement-and-student-welfare-cell
+
+# enables search
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  description: "Bluebook"
+  author: Created by Pavit C
+
+  defaultTheme: auto
+  ShowShareButtons: false
+  ShowReadingTime: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: false
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  # to explore
+  comments: true
+  # comments babyyyyyyyy
+  images: ["images/papermod-cover.png"]
+
+  homeInfoParams:
+    Title: "Bluebook"
+    Content: >
+      - Welcome to the Bluebook of MANIT!
+
+      - **Bluebook** is designed to compile previous year interview experiences to help you better prepare for your placement interviews and online assessments.
+
+      - Click on the [link icon (🔗)](https://forms.gle/NSSLd1KtiLMn2q6j6) below to fill in your response.
+
+  socialIcons:
+    - name: github3
+      title: Upload your interview experience
+      url: "https://forms.gle/NSSLd1KtiLMn2q6j6"
+    - name: X
+      title: Share Bluebook on X/Twitter
+      url: "https://x.com/intent/tweet/?text=I%20am%20using%20✨Bluebook✨%20to%20prepare%20for%20my%20Interviews%20and%20Assessments!%20%E2%9C%94%20You%20can%20also%20use%20it%20here!%20https://tpo-manit.github.io/bluebook%0AIf%20you%20are%20from%20MANIT%20you%20can%20fill%20out%20your%20response%20here%20to%20get%20featured!%20https://forms.gle/NSSLd1KtiLMn2q6j6&hashtags=MANIT,Bluebook,Interviews"
+    - name: Linkedin
+      title: Share Bluebook on Linkedin :)
+      url: "https://www.linkedin.com/shareArticle?mini=true&url=https%3A//tpo-manit.github.io/bluebook"
+    - name: Github
+      title: We are Fully Source Available (AGPL)!
+      url: "https://github.com/tpo-manit/bluebook"
+
+  label:
+  iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
+  text: "Home"
+  icon: icon.png
+  iconHeight: 35
+
+  # analytics:
+  #     google:
+  #         SiteVerificationTag: "XYZabc"
+
+  assets:
+    disableHLJS: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true

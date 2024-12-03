@@ -1,0 +1,34 @@
+# comments afterwards in blog using utterances
+name: Convert Interview Data
+
+on:
+  push:
+    paths:
+      - 'responses/**'
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Run conversion script
+        run: python responses/scripts/convert.py
+
+      - name: Configure Git
+        run: |
+          git config user.name 'theSoberSobber'
+          git config user.email 'akshatshrivastava0010@gmail.com'
+
+      - name: Commit changes
+        run: |
+          git add .
+          git commit -m "[CI] New Post"
+          git push

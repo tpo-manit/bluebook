@@ -1,0 +1,47 @@
+# deploy to gh pages
+name: Publish to GH Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'contents/**'
+  pull_request:
+    paths:
+      - 'contents/**'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest 
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Checkout destination
+        uses: actions/checkout@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          ref: gh-pages
+          path: built-site
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v2
+
+      - name: Build
+        run: hugo
+
+      - name: Deploy
+        if: github.ref == 'refs/heads/main'
+        run: |
+          cp -R public/* ${GITHUB_WORKSPACE}/built-site/
+          cd ${GITHUB_WORKSPACE}/built-site
+          git add .
+          git config user.name 'theSoberSobber'
+          git config user.email 'akshatshrivastava0010@gmail.com'
+          git commit -m '[CD] New Public Build'
+          git push

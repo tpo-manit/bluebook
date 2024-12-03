@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Bluebook</title>
-    <link>https://tpo-manit.github.io/bluebook/responses/bluebook/</link>
-    <description>Recent content on Bluebook</description>
+    <title>Cisco on Bluebook</title>
+    <link>https://tpo-manit.github.io/bluebook/companies/cisco/</link>
+    <description>Recent content in Cisco on Bluebook</description>
     <image>
       <title>Bluebook</title>
       <url>https://tpo-manit.github.io/bluebook/images/papermod-cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.139.3</generator>
     <language>en</language>
     <lastBuildDate>Tue, 03 Dec 2024 21:28:11 +0000</lastBuildDate>
-    <atom:link href="https://tpo-manit.github.io/bluebook/responses/bluebook/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tpo-manit.github.io/bluebook/companies/cisco/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pavit Chhabra - Cisco</title>
       <link>https://tpo-manit.github.io/bluebook/responses/bluebook/response_1_2024-12-03/</link>

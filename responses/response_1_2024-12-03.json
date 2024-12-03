@@ -1,0 +1,56 @@
+{
+  "timestamp": "2024-12-03T21:28:11.072Z",
+  "email": "211112267@stu.manit.ac.in",
+  "data": {
+    "Name": [
+      "Pavit Chhabra"
+    ],
+    "Linkedin Profile (if interested)": [
+      "https://www.linkedin.com/in/pavitchhabrawork/"
+    ],
+    "CV/Resume (if interested)": [],
+    "CGPA at the time of Selection (if interested) ": [
+      "8.48"
+    ],
+    "Company Appeared For": [
+      "Cisco"
+    ],
+    "Placement Profile": [
+      "SDE"
+    ],
+    "Mode of Online Assessment": [
+      "Online"
+    ],
+    "Online Assessment Difficulty (out of 5)": [
+      "2"
+    ],
+    "Online Assessment Round Questions": [
+      "Can't recall much but there were 3 questions, one was based on binary search and was similar to aggressive cows, one was simple greedy and last one was mcm dp."
+    ],
+    "Mode of Interview(s)": [
+      "Online"
+    ],
+    "Number of Interview Rounds": [
+      "3"
+    ],
+    "Interview Experience": [
+      "First round was completely based on CV/Resume and was just project discussion based on design decisions taken etc. There were also some questions from CS Core.\nSecond round had one DSA question, median of two sorted arrays. There was also discussion on CV in this round."
+    ],
+    "Level of Difficulty of Interview(s)": [
+      "2"
+    ],
+    "Tips/Sources for Interview Preparation": [
+      "Be thorough with your projects and CV in general.\nHave basic DSA Knowledge, Striver's sheet is more than enough."
+    ],
+    "Were Society Position of Responsibility given any Importance?": [
+      "No"
+    ],
+    "Did the Interviewer(s) Focus on asking questions from CV/Resume": [
+      "Yes"
+    ],
+    "Were the interview questions relevant to the JD Circulated? (if applicable)": [],
+    "Any other relevant information": [
+      "was selected for a summer Internship."
+    ]
+  }
+}

@@ -1,4 +1,3 @@
-# comments afterwards in blog using utterances
 # events created by a push from GITHUB_TOKEN do not create a workflow run!! use auto commit ig that works on cp snippets
 name: Convert Interview Data
 

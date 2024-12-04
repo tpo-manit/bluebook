@@ -53,7 +53,7 @@ params:
   description: "Bluebook"
   author: Created by Pavit C
 
-  defaultTheme: auto
+  defaultTheme: dark
   ShowShareButtons: false
   ShowReadingTime: true
   displayFullLangName: true
@@ -64,9 +64,7 @@ params:
   ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: true
-  # to explore
   comments: true
-  # comments babyyyyyyyy
   images: ["images/papermod-cover.png"]
 
   homeInfoParams:

@@ -1,0 +1,28 @@
+<script src="https://utteranc.es/client.js"
+        repo="tpo-manit/bluebook"
+        issue-term="pathname"
+        label="utterances"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+{{- if (not site.Params.disableThemeToggle) }}
+<script>
+    function utterancesTheme() {
+        const iframe = document.querySelector('.utterances-frame');
+        if (iframe) {
+            const theme = document.body.className.includes("dark") ? 'github-light' : 'github-dark';
+            const message = {
+                type: 'set-theme',
+                theme: theme
+            };
+            iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+        }
+    }
+
+    document.getElementById("theme-toggle").addEventListener("click", () => utterancesTheme());
+
+</script>
+{{- end }}

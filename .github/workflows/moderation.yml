@@ -16,26 +16,38 @@ jobs:
     steps:
     - name: Checkout the repository
       uses: actions/checkout@v3
-
-    - name: Set up Python
-      uses: actions/setup-python@v3
-      with:
-        python-version: '3.8'
-
-    - name: Install dependencies
+    
+    - name: Install Ollama
       run: |
-        pip install ollama
+        curl -fsSL https://ollama.com/install.sh | bash
+      shell: bash
 
-    - name: Moderation Check with Ollama Model
-      id: moderation
+    - name: Install the LLM model (mistral)
       run: |
-        python responses/scripts/buildPromptAndRun.py
+        ollama pull mistral
+      shell: bash
 
-    - name: Upload Moderation Result
-      uses: actions/upload-artifact@v3
-      with:
-        name: moderation_result
-        path: /tmp/moderation_result.txt
+    - name: Build Prompt
+      id: prompt
+      run: |
+        prompt=$(python responses/scripts/buildPrompt.py)
+        echo "Prompt generated: $prompt"
+        echo "::set-output name=prompt::$prompt"
+      shell: bash
+
+    - name: Run Ollama and get result
+      id: ollama
+      run: |
+        # Get the prompt generated in the Build Prompt step
+        prompt="${{ steps.prompt.outputs.prompt }}"
+        
+        # Call Ollama API with the prompt
+        review_result=$(curl -s http://127.0.0.1:11434/api/generate \
+          -d '{"model": "mistral", "prompt": "'"$prompt"'", "stream": false}' | jq -r '.response')
+        
+        # Set the review result as an output for later use
+        echo "::set-output name=result::$review_result"
+      shell: bash
 
     - name: Comment moderation result on PR
       uses: peter-evans/create-or-update-comment@v4
@@ -44,5 +56,5 @@ jobs:
         body: |
           Moderation Check Completed. Below are the results:
           ```text
-          ${{ steps.moderation.outputs.result }}
+          ${{ steps.ollama.outputs.result }}
           ```

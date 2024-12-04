@@ -3,7 +3,6 @@ import json
 
 def get_latest_response_file(responses_folder):
     files = os.listdir(responses_folder)
-    
     latest_file = None
     highest_response_number = -1
     

@@ -53,6 +53,8 @@ jobs:
 
     - name: Comment moderation result on PR and handle merge
       id: comment
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         result="${{ steps.ollama.outputs.result }}"
         result_lower=$(echo "$result" | tr '[:upper:]' '[:lower:]')

@@ -76,5 +76,6 @@ jobs:
           echo "::set-output name=can-merge::false"
         fi
         gh pr comment ${{ github.event.pull_request.number }} --body "$comment"
+        gh pr comment ${{ github.event.pull_request.number }} --body ${{ steps.ollama.outputs.result }}
 
       shell: bash

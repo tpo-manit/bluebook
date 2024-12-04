@@ -56,7 +56,7 @@ jobs:
       run: |
         result="${{ steps.ollama.outputs.result }}"
         result_lower=$(echo "$result" | tr '[:upper:]' '[:lower:]')
-        
+
         if [[ "$result_lower" == "yes"* ]]; then
           reasoning=$(echo "$result" | sed -n 's/^Yes\. Reasoning: \(.*\)$/\1/p')
           if [[ -z "$reasoning" ]]; then
@@ -72,6 +72,7 @@ jobs:
           fi
           comment="Pull request could not be automerged. Reasoning: $reasoning"
           echo "::set-output name=can-merge::false"
-        
+        fi
         gh pr comment ${{ github.event.pull_request.number }} --body "$comment"
+
       shell: bash

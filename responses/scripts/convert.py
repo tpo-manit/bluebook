@@ -40,7 +40,7 @@ def convert_to_markdown(latest_file_path):
     markdown_content += f'weight: 1\n'
     markdown_content += f'aliases: ["/{"-".join(data["data"]["Name"].lower().split(" "))}-{data["data"]["Company Appeared For"].lower()}"]\n'
     markdown_content += f'tags: ["{data["data"]["Company Appeared For"]}"]\n'
-    markdown_content += f'linkedin: ["{data["data"]["Linkedin Profile (if interested)"]}"]\n'
+    markdown_content += f'linkedin: "{data["data"]["Linkedin Profile (if interested)"]}"\n'
     markdown_content += f'companies: ["{data["data"]["Company Appeared For"]}"]\n'
     markdown_content += f'profiles: ["{data["data"]["Placement Profile"]}"]\n'
     markdown_content += f'author: ["{data["data"]["Name"]} - {data["email"]}"]\n'

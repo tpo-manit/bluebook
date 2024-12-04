@@ -2,7 +2,6 @@
 // make sure to add GH_TOKEN property, make sure your token is properly scoped
 const USERNAME = "tpo-manit";
 const REPO = "bluebook";
-const GITHUB_API_URL = `https://api.github.com/repos/${USERNAME}/${REPO}/contents/responses/`;
 
 function onSubmit(e) {
     var form = FormApp.getActiveForm();
@@ -42,7 +41,7 @@ function onSubmit(e) {
     var responseId = allResponses.length;
     var date = new Date().toISOString().split('T')[0];
 
-    var fileName = `response_${responseId}-${date}.json`;
+    var fileName = `response_${responseId}_${date}.json`;
 
     var responseData = {
         "timestamp": new Date().toISOString(),
@@ -58,30 +57,80 @@ function onSubmit(e) {
 }
 
 function makeFilePublic(fileId) {
-    var driveService = DriveApp.getFileById(fileId);
-    driveService.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+    var driveService = DriveApp.getFileById(fileId); // Get the file by ID
+    driveService.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW); // Set the sharing to public with view access
 }
 
 function createGitHubFile(fileName, fileContent, responseId, GITHUB_TOKEN) {
-    var url = GITHUB_API_URL + fileName;
+    var branchName = fileName;
+    var defaultBranch = 'main';
 
-    var payload = {
-        "message": `[Webhook] Response ${responseId}: ${new Date().toISOString()}`,
-        "content": Utilities.base64Encode(fileContent)
-    };
+    var url = `https://api.github.com/repos/${USERNAME}/${REPO}/git/refs/heads/${defaultBranch}`;
 
     var options = {
-        "method": "put",
+        "method": "get",
         "headers": {
             "Authorization": "token " + GITHUB_TOKEN
-        },
-        "payload": JSON.stringify(payload)
+        }
     };
 
     try {
         var response = UrlFetchApp.fetch(url, options);
-        Logger.log("File created successfully: " + fileName);
+        var defaultBranchData = JSON.parse(response.getContentText());
+        var sha = defaultBranchData.object.sha;
+
+        var createBranchUrl = `https://api.github.com/repos/${USERNAME}/${REPO}/git/refs`;
+        var createBranchPayload = {
+            "ref": `refs/heads/${branchName}`,
+            "sha": sha
+        };
+
+        var createBranchOptions = {
+            "method": "post",
+            "headers": {
+                "Authorization": "token " + GITHUB_TOKEN
+            },
+            "payload": JSON.stringify(createBranchPayload)
+        };
+
+        UrlFetchApp.fetch(createBranchUrl, createBranchOptions);
+
+        var createCommitUrl = `https://api.github.com/repos/${USERNAME}/${REPO}/contents/responses/${fileName}`;
+        var commitPayload = {
+            "message": `[Webhook] Response ${responseId}: ${new Date().toISOString()}`,
+            "content": Utilities.base64Encode(fileContent),
+            "branch": branchName
+        };
+
+        var commitOptions = {
+            "method": "put",
+            "headers": {
+                "Authorization": "token " + GITHUB_TOKEN
+            },
+            "payload": JSON.stringify(commitPayload)
+        };
+
+        UrlFetchApp.fetch(createCommitUrl, commitOptions);
+
+        var createPRUrl = `https://api.github.com/repos/${USERNAME}/${REPO}/pulls`;
+        var prPayload = {
+            "title": `Response ${responseId}`,
+            "head": branchName,
+            "base": defaultBranch,
+            "body": `This PR contains the response data for response ID ${responseId}`
+        };
+
+        var prOptions = {
+            "method": "post",
+            "headers": {
+                "Authorization": "token " + GITHUB_TOKEN
+            },
+            "payload": JSON.stringify(prPayload)
+        };
+
+        UrlFetchApp.fetch(createPRUrl, prOptions);
+        Logger.log("PR created successfully: " + fileName);
     } catch (e) {
-        Logger.log("Error creating file: " + e.toString());
+        Logger.log("Error: " + e.toString());
     }
 }

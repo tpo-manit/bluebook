@@ -16,6 +16,8 @@ jobs:
     steps:
     - name: Checkout the repository
       uses: actions/checkout@v3
+      with:
+          token: ${{ secrets.PAT }}
     
     - name: Install Ollama
       run: |
@@ -49,12 +51,27 @@ jobs:
         echo "::set-output name=result::$review_result"
       shell: bash
 
-    - name: Comment moderation result on PR
-      uses: peter-evans/create-or-update-comment@v4
-      with:
-        issue-number: ${{ github.event.pull_request.number }}
-        body: |
-          Moderation Check Completed. Below are the results:
-          ```text
-          ${{ steps.ollama.outputs.result }}
-          ```
+    - name: Comment moderation result on PR and handle merge
+      id: comment
+      run: |
+        result="${{ steps.ollama.outputs.result }}"
+        result_lower=$(echo "$result" | tr '[:upper:]' '[:lower:]')
+        
+        if [[ "$result_lower" == "yes"* ]]; then
+          reasoning=$(echo "$result" | sed -n 's/^Yes\. Reasoning: \(.*\)$/\1/p')
+          if [[ -z "$reasoning" ]]; then
+            reasoning="No specific reasoning provided."
+          fi
+          comment="Pull request can be automerged. Reasoning: $reasoning"
+          echo "::set-output name=can-merge::true"
+          gh pr merge ${{ github.event.pull_request.number }} --auto
+        else
+          reasoning=$(echo "$result" | sed -n 's/^No\. Reasoning: \(.*\)$/\1/p')
+          if [[ -z "$reasoning" ]]; then
+            reasoning="No specific reasoning provided."
+          fi
+          comment="Pull request could not be automerged. Reasoning: $reasoning"
+          echo "::set-output name=can-merge::false"
+        
+        gh pr comment ${{ github.event.pull_request.number }} --body "$comment"
+      shell: bash

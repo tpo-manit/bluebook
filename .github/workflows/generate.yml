@@ -3,6 +3,8 @@ name: Convert Interview Data
 
 on:
   push:
+    branches:
+      - main
     paths:
       - 'responses/**'
 

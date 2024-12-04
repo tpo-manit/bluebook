@@ -7,9 +7,6 @@ on:
       - main
     paths:
       - 'content/**'
-  pull_request:
-    paths:
-      - 'content/**'
   workflow_dispatch:
 
 jobs:

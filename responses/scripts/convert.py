@@ -33,19 +33,41 @@ def convert_to_markdown(latest_file_path):
     data = convert_to_key_value_pair(data)
 
     markdown_content = f"---\n"
-    markdown_content += f'title: "{data["data"]["Name"]} - {data["data"]["Company Appeared For"]}"\n'
-    markdown_content += f'summary: Read about my interview experience at {data["data"]["Company Appeared For"]}\n'
-    markdown_content += f'date: "{data["timestamp"]}"\n'
+    
+    name = data["data"].get("Name", None)
+    company = data["data"].get("Company Appeared For", None)
+    linkedin = data["data"].get("Linkedin Profile (if interested)", None)
+    placement_profile = data["data"].get("Placement Profile", None)
+    email = data.get("email", None)
+    timestamp = data.get("timestamp", None)
+    
+    if name and company:
+        markdown_content += f'title: "{name} - {company}"\n'
+        markdown_content += f'summary: Read about my interview experience at {company}\n'
+        markdown_content += f'aliases: ["/{"-".join(name.lower().split(" "))}-{company.lower()}"]\n'
+        markdown_content += f'tags: ["{company}"]\n'
+    
+    if timestamp:
+        markdown_content += f'date: "{timestamp}"\n'
+    
     markdown_content += f'series: ["PaperMod"]\n'
     markdown_content += f'weight: 1\n'
-    markdown_content += f'aliases: ["/{"-".join(data["data"]["Name"].lower().split(" "))}-{data["data"]["Company Appeared For"].lower()}"]\n'
-    markdown_content += f'tags: ["{data["data"]["Company Appeared For"]}"]\n'
-    markdown_content += f'linkedin: "{data["data"]["Linkedin Profile (if interested)"]}"\n'
-    markdown_content += f'companies: ["{data["data"]["Company Appeared For"]}"]\n'
-    markdown_content += f'profiles: ["{data["data"]["Placement Profile"]}"]\n'
-    markdown_content += f'author: ["{data["data"]["Name"]} - {data["email"]}"]\n'
+    
+    if linkedin:
+        markdown_content += f'linkedin: "{linkedin}"\n'
+    
+    if company:
+        markdown_content += f'companies: ["{company}"]\n'
+    
+    if placement_profile:
+        markdown_content += f'profiles: ["{placement_profile}"]\n'
+    
+    if name and email:
+        markdown_content += f'author: ["{name} - {email}"]\n'
+    
     markdown_content += f"---\n"
     markdown_content += f"---\n"
+
 
     question_number = 1
 

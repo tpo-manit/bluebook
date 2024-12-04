@@ -81,7 +81,7 @@ jobs:
         path: /tmp/moderation_result.txt
 
     - name: Comment moderation result on PR
-      uses: peter-evans/comment@v2
+      uses: peter-evans/create-or-update-comment@v4
       with:
         issue-number: ${{ github.event.pull_request.number }}
         body: |

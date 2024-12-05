@@ -51,31 +51,26 @@ jobs:
         echo "::set-output name=result::$review_result"
       shell: bash
 
-    - name: Comment moderation result on PR and handle merge
-      id: comment
+    - name: Parse Ollama Result
+      id: parse-result
+      run: |
+        parsed_result=$(echo "${{ steps.ollama.outputs.result }}" | python responses/scripts/parseOllamaOutput.py)
+
+        can_automerge=$(echo "$parsed_result" | jq -r '.can_automerge')
+        comment=$(echo "$parsed_result" | jq -r '.comment')
+        
+        echo "::set-output name=can_automerge::$can_automerge"
+        echo "::set-output name=comment::$parsed_result"
+      shell: bash
+    
+    - name: Comment and Automerge
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        result="${{ steps.ollama.outputs.result }}"
-        result_lower=$(echo "$result" | tr '[:upper:]' '[:lower:]')
-
-        if [[ "$result_lower" == "yes"* ]]; then
-          reasoning=$(echo "$result" | sed -n 's/^Yes\. Reasoning: \(.*\)$/\1/p')
-          if [[ -z "$reasoning" ]]; then
-            reasoning="No specific reasoning provided."
-          fi
-          comment="Pull request can be automerged. Reasoning: $reasoning"
-          echo "::set-output name=can-merge::true"
+        if [[ "${{ steps.parse-result.outputs.can_automerge }}" == "true" ]]; then
           gh pr merge ${{ github.event.pull_request.number }} --auto
         else
-          reasoning=$(echo "$result" | sed -n 's/^No\. Reasoning: \(.*\)$/\1/p')
-          if [[ -z "$reasoning" ]]; then
-            reasoning="No specific reasoning provided."
-          fi
-          comment="Pull request could not be automerged. Reasoning: $reasoning"
-          echo "::set-output name=can-merge::false"
+          echo "PR could not be automerged."
         fi
-        gh pr comment ${{ github.event.pull_request.number }} --body "$comment"
-        gh pr comment ${{ github.event.pull_request.number }} --body ${{ steps.ollama.outputs.result }}
-
+        gh pr comment --body "${{ steps.parse-result.outputs.comment }}"
       shell: bash

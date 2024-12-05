@@ -58,6 +58,9 @@ jobs:
 
         can_automerge=$(echo "$parsed_result" | jq -r '.can_automerge')
         comment=$(echo "$parsed_result" | jq -r '.comment')
+
+        echo $can_automerge
+        echo $comment
         
         echo "::set-output name=can_automerge::$can_automerge"
         echo "::set-output name=comment::$parsed_result"
@@ -68,7 +71,7 @@ jobs:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         if [[ "${{ steps.parse-result.outputs.can_automerge }}" == "true" ]]; then
-          gh pr merge ${{ github.event.pull_request.number }} --auto
+          gh pr merge ${{ github.event.pull_request.number }} --rebase
         else
           echo "PR could not be automerged."
         fi

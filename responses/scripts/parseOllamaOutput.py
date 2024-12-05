@@ -15,11 +15,11 @@ def parse_ollama_output(output):
     
     if output.lower().startswith("yes."):
         can_automerge = True
-        reason = output.split(".", 1)[1].strip() if output.split(".", 1)[1].strip() in output else "No specific reason provided."
+        reason = output.split("Reasoning:", 1)[1].strip() if output.split(".", 1)[1].strip() in output else "No specific reason provided."
         comment = f"The PR can be automerged. Reason: {reason}"
     elif output.lower().startswith("no."):
         can_automerge = False
-        reason = output.split(".", 1)[1].strip() if output.split(".", 1)[1].strip() in output else "No specific reason provided."
+        reason = output.split("Reasoning:", 1)[1].strip() if output.split(".", 1)[1].strip() in output else "No specific reason provided."
         comment = f"The PR cannot be automerged. Reason: {reason}"
     else:
         can_automerge = False

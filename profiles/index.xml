@@ -11,26 +11,12 @@
     </image>
     <generator>Hugo -- 0.139.3</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Dec 2024 05:04:40 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2024 21:49:33 +0000</lastBuildDate>
     <atom:link href="https://tpo-manit.github.io/bluebook/profiles/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Civil Core</title>
-      <link>https://tpo-manit.github.io/bluebook/profiles/civil-core/</link>
-      <pubDate>Thu, 05 Dec 2024 05:04:40 +0000</pubDate>
-      <guid>https://tpo-manit.github.io/bluebook/profiles/civil-core/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hardware</title>
-      <link>https://tpo-manit.github.io/bluebook/profiles/hardware/</link>
-      <pubDate>Thu, 05 Dec 2024 04:52:39 +0000</pubDate>
-      <guid>https://tpo-manit.github.io/bluebook/profiles/hardware/</guid>
-      <description></description>
-    </item>
     <item>
       <title>SDE</title>
       <link>https://tpo-manit.github.io/bluebook/profiles/sde/</link>
-      <pubDate>Thu, 05 Dec 2024 04:43:30 +0000</pubDate>
+      <pubDate>Tue, 03 Dec 2024 21:49:33 +0000</pubDate>
       <guid>https://tpo-manit.github.io/bluebook/profiles/sde/</guid>
       <description></description>
     </item>

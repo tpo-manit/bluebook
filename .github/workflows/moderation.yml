@@ -63,15 +63,15 @@ jobs:
         echo $comment
         
         echo "::set-output name=can_automerge::$can_automerge"
-        echo "::set-output name=comment::$parsed_result"
+        echo "::set-output name=comment::$comment"
       shell: bash
     
     - name: Comment and Automerge
       env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_TOKEN: ${{ secrets.PAT }}
       run: |
         if [[ "${{ steps.parse-result.outputs.can_automerge }}" == "true" ]]; then
-          gh pr merge ${{ github.event.pull_request.number }} --rebase
+          gh pr merge ${{ github.event.pull_request.number }} --rebase --delete-branch
         else
           echo "PR could not be automerged."
         fi

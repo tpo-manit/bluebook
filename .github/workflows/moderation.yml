@@ -18,6 +18,8 @@ jobs:
       uses: actions/checkout@v3
       with:
           token: ${{ secrets.PAT }}
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
     
     - name: Install Ollama
       run: |
@@ -70,10 +72,10 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.PAT }}
       run: |
+        gh pr comment --body "${{ steps.parse-result.outputs.comment }}"
         if [[ "${{ steps.parse-result.outputs.can_automerge }}" == "true" ]]; then
           gh pr merge ${{ github.event.pull_request.number }} --rebase --delete-branch
         else
           echo "PR could not be automerged."
         fi
-        gh pr comment --body "${{ steps.parse-result.outputs.comment }}"
       shell: bash

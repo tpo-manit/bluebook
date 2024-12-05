@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.139.3</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Dec 2024 04:43:30 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Dec 2024 04:52:39 +0000</lastBuildDate>
     <atom:link href="https://tpo-manit.github.io/bluebook/profiles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hardware</title>
+      <link>https://tpo-manit.github.io/bluebook/profiles/hardware/</link>
+      <pubDate>Thu, 05 Dec 2024 04:52:39 +0000</pubDate>
+      <guid>https://tpo-manit.github.io/bluebook/profiles/hardware/</guid>
+      <description></description>
+    </item>
     <item>
       <title>SDE</title>
       <link>https://tpo-manit.github.io/bluebook/profiles/sde/</link>

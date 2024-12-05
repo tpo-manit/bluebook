@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Series on Bluebook</title>
-    <link>https://tpo-manit.github.io/bluebook/series/</link>
-    <description>Recent content in Series on Bluebook</description>
+    <title>Hardware on Bluebook</title>
+    <link>https://tpo-manit.github.io/bluebook/profiles/hardware/</link>
+    <description>Recent content in Hardware on Bluebook</description>
     <image>
       <title>Bluebook</title>
       <url>https://tpo-manit.github.io/bluebook/images/papermod-cover.png</url>
@@ -12,13 +12,13 @@
     <generator>Hugo -- 0.139.3</generator>
     <language>en</language>
     <lastBuildDate>Thu, 05 Dec 2024 04:52:39 +0000</lastBuildDate>
-    <atom:link href="https://tpo-manit.github.io/bluebook/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tpo-manit.github.io/bluebook/profiles/hardware/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>PaperMod</title>
-      <link>https://tpo-manit.github.io/bluebook/series/papermod/</link>
+      <title>Test - Tesr</title>
+      <link>https://tpo-manit.github.io/bluebook/responses/bluebook/response_11_2024-12-05/</link>
       <pubDate>Thu, 05 Dec 2024 04:52:39 +0000</pubDate>
-      <guid>https://tpo-manit.github.io/bluebook/series/papermod/</guid>
-      <description></description>
+      <guid>https://tpo-manit.github.io/bluebook/responses/bluebook/response_11_2024-12-05/</guid>
+      <description>Read about my interview experience at Tesr</description>
     </item>
   </channel>
 </rss>

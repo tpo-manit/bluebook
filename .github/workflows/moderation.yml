@@ -35,13 +35,35 @@ jobs:
       run: |
         gh pr close ${{ github.event.pull_request.number }} --delete-branch
         exit 0
-    
-    - name: Install Ollama
+
+    # Cache Ollama Installation
+    - name: Cache Ollama installation
+      id: cache-ollama
+      uses: actions/cache@v3
+      with:
+        path: /usr/local/bin/ollama
+        key: ollama-${{ runner.os }}-v1
+        restore-keys: |
+          ollama-${{ runner.os }}-
+      
+    - name: Install Ollama (only if not cached)
+      if: steps.cache-ollama.outputs.cache-hit != 'true'
       run: |
         curl -fsSL https://ollama.com/install.sh | bash
       shell: bash
 
-    - name: Install the LLM model (mistral)
+    # Cache Mistral Model
+    - name: Cache Mistral model
+      id: cache-mistral
+      uses: actions/cache@v3
+      with:
+        path: /home/runner/.ollama/models/mistral
+        key: mistral-${{ runner.os }}-v1
+        restore-keys: |
+          mistral-${{ runner.os }}-
+
+    - name: Install the LLM model (mistral) if not cached
+      if: steps.cache-mistral.outputs.cache-hit != 'true'
       run: |
         ollama pull mistral
       shell: bash
@@ -88,7 +110,7 @@ jobs:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         gh pr comment --body "${{ steps.parse-result.outputs.comment }}"
-    
+
     - name: Automerge (if applicable)
       env:
         GH_TOKEN: ${{ secrets.PAT }}

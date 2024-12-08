@@ -38,11 +38,8 @@ languages:
         - name: Profiles
           url: profiles/
           weight: 10
-        - name: Archives
-          url: archives/
-          weight: 20
-        - name: TNP
-          url: https://www.manit.ac.in/training-placement-and-student-welfare-cell
+        - name: Submit Response!
+          url: https://forms.gle/NSSLd1KtiLMn2q6j6
 
 # enables search
 outputs:

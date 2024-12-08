@@ -1,0 +1,52 @@
+{
+  "timestamp": "2024-12-08T09:26:11.507Z",
+  "email": "211112251@stu.manit.ac.in",
+  "data": {
+    "Name": [
+      "Akshay Soni "
+    ],
+    "Linkedin Profile (if interested)": [
+      "https://www.linkedin.com/in/akshaysoni07?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    ],
+    "CV/Resume (if interested)": [],
+    "CGPA at the time of Selection (if interested) ": [],
+    "Company Appeared For": [
+      "Verisk Analytics "
+    ],
+    "Placement Profile": [
+      "SDE"
+    ],
+    "Mode of Online Assessment": [
+      "Offline"
+    ],
+    "Online Assessment Difficulty (out of 5)": [
+      "4"
+    ],
+    "Online Assessment Round Questions": [
+      "Object oriented programming based problems by providing with the input and will be asked for corresponding output of the program. CSE Core subjects are focused in this section, so if you are good with the fundamentals, you can easily go with this."
+    ],
+    "Mode of Interview(s)": [
+      "Offline"
+    ],
+    "Number of Interview Rounds": [
+      "3"
+    ],
+    "Interview Experience": [
+      "First two rounds were technical nature. In the first one they asked me the very first question from system design about designing a class for cars and then override that class to form and add specific functionalities such as types of brake, shape, etc.\n\nSecond question was simple DSA i.e. given two strings find that they are anagrams of each other or not.\n\nThird problem was from game design such that given 21 stick, the person who picks 21st stick will loose, a person can pick 1-4 sticks as per his intelligence on his turn. Code a program so that one person always wins.\n\nIn the second round, they asked me the implementation of priority queue data structure, asked me about projects and motive behind them, practical application of linked list data structure \n\nThird one was managerial interview, asked me about why do you want to join us, what makes you the best fit for the role, it was very conversational in nature."
+    ],
+    "Level of Difficulty of Interview(s)": [
+      "4"
+    ],
+    "Tips/Sources for Interview Preparation": [
+      "They ask for very basic DSA, but even for harder companies, you may completely rely on strivers 450 problem sheet.\n\nOther fundamentals can be covered directly through some yt one lectures available. The thing that I really found helpful for OOPS concepts was love babbars guide and in that video he provides a whimsical link for all of the related topics."
+    ],
+    "Were Society Position of Responsibility given any Importance?": [
+      "No"
+    ],
+    "Did the Interviewer(s) Focus on asking questions from CV/Resume": [
+      "Yes"
+    ],
+    "Were the interview questions relevant to the JD Circulated? (if applicable)": [],
+    "Any other relevant information": []
+  }
+}

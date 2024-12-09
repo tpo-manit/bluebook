@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Colleges on Bluebook</title>
-    <link>https://tpo-manit.github.io/bluebook/colleges/</link>
+    <link>https://pavit.xyz/bluebook/colleges/</link>
     <description>Recent content in Colleges on Bluebook</description>
     <image>
       <title>Bluebook</title>
-      <url>https://tpo-manit.github.io/bluebook/images/papermod-cover.png</url>
-      <link>https://tpo-manit.github.io/bluebook/images/papermod-cover.png</link>
+      <url>https://pavit.xyz/bluebook/images/papermod-cover.png</url>
+      <link>https://pavit.xyz/bluebook/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.139.3</generator>
     <language>en</language>
     <lastBuildDate>Mon, 09 Dec 2024 08:25:08 +0000</lastBuildDate>
-    <atom:link href="https://tpo-manit.github.io/bluebook/colleges/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pavit.xyz/bluebook/colleges/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MANIT </title>
-      <link>https://tpo-manit.github.io/bluebook/colleges/manit-/</link>
+      <link>https://pavit.xyz/bluebook/colleges/manit-/</link>
       <pubDate>Mon, 09 Dec 2024 08:25:08 +0000</pubDate>
-      <guid>https://tpo-manit.github.io/bluebook/colleges/manit-/</guid>
+      <guid>https://pavit.xyz/bluebook/colleges/manit-/</guid>
       <description></description>
     </item>
     <item>
       <title>MANIT</title>
-      <link>https://tpo-manit.github.io/bluebook/colleges/manit/</link>
+      <link>https://pavit.xyz/bluebook/colleges/manit/</link>
       <pubDate>Sun, 08 Dec 2024 09:26:11 +0000</pubDate>
-      <guid>https://tpo-manit.github.io/bluebook/colleges/manit/</guid>
+      <guid>https://pavit.xyz/bluebook/colleges/manit/</guid>
       <description></description>
     </item>
   </channel>

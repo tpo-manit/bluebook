@@ -45,7 +45,7 @@ def convert_to_markdown(latest_file_path):
     if name and company:
         markdown_content += f'title: "{name} - {company}"\n'
         markdown_content += f'summary: Read about my interview experience at {company}\n'
-        markdown_content += f'aliases: ["/{"-".join(name.lower().split(" "))}-{company.lower()}-{college.lower()}"]\n'
+        #markdown_content += f'aliases: ["/{"-".join(name.lower().split(" "))}-{company.lower()}-{college.lower()}"]\n'
         markdown_content += f'tags: ["{company}", "{college}"]\n'
     
     if timestamp:

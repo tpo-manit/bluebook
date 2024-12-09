@@ -9,10 +9,17 @@
       <url>https://pavit.xyz/bluebook/images/papermod-cover.png</url>
       <link>https://pavit.xyz/bluebook/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.139.3</generator>
+    <generator>Hugo -- 0.139.4</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Dec 2024 08:25:08 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Dec 2024 20:28:00 +0000</lastBuildDate>
     <atom:link href="https://pavit.xyz/bluebook/companies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco</title>
+      <link>https://pavit.xyz/bluebook/companies/cisco/</link>
+      <pubDate>Mon, 09 Dec 2024 20:28:00 +0000</pubDate>
+      <guid>https://pavit.xyz/bluebook/companies/cisco/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Meesho</title>
       <link>https://pavit.xyz/bluebook/companies/meesho/</link>
@@ -25,13 +32,6 @@
       <link>https://pavit.xyz/bluebook/companies/verisk-analytics-/</link>
       <pubDate>Sun, 08 Dec 2024 09:26:11 +0000</pubDate>
       <guid>https://pavit.xyz/bluebook/companies/verisk-analytics-/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cisco</title>
-      <link>https://pavit.xyz/bluebook/companies/cisco/</link>
-      <pubDate>Tue, 03 Dec 2024 21:28:11 +0000</pubDate>
-      <guid>https://pavit.xyz/bluebook/companies/cisco/</guid>
       <description></description>
     </item>
   </channel>

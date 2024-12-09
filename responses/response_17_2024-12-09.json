@@ -1,0 +1,55 @@
+{
+  "timestamp": "2024-12-09T08:25:08.380Z",
+  "email": "211114071@stu.manit.ac.in",
+  "data": {
+    "Name": [
+      "Aniket Jain"
+    ],
+    "College": [
+      "MANIT "
+    ],
+    "Linkedin Profile (if interested)": [],
+    "CV/Resume (if interested)": [],
+    "CGPA at the time of Selection (if interested) ": [
+      "9.33"
+    ],
+    "Company Appeared For": [
+      "Meesho"
+    ],
+    "Placement Profile": [
+      "SDE"
+    ],
+    "Mode of Online Assessment": [
+      "Online"
+    ],
+    "Online Assessment Difficulty (out of 5)": [
+      "3"
+    ],
+    "Online Assessment Round Questions": [
+      "3 DSA Question , out of which 2 are medium and 3rd one is of tree with normal dfs abd backtracking logic ."
+    ],
+    "Mode of Interview(s)": [
+      "Online"
+    ],
+    "Number of Interview Rounds": [
+      "2"
+    ],
+    "Interview Experience": [
+      "The interview had two rounds. The first round was a machine coding task where I was asked to implement Apache Kafka. The second round was a discussion about my projects, focusing on my internship experience and general interaction."
+    ],
+    "Level of Difficulty of Interview(s)": [
+      "3"
+    ],
+    "Tips/Sources for Interview Preparation": [],
+    "Were Society Position of Responsibility given any Importance?": [
+      "Maybe, can't tell certainly"
+    ],
+    "Did the Interviewer(s) Focus on asking questions from CV/Resume": [
+      "Yes"
+    ],
+    "Were the interview questions relevant to the JD Circulated? (if applicable)": [
+      "Yes"
+    ],
+    "Any other relevant information": []
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "timestamp": "2024-12-09T20:28:00.520Z",
+  "email": "aryangupta_it21a9_02@dtu.ac.in",
+  "data": {
+    "Name": [
+      "Aryan Gupta"
+    ],
+    "College": [
+      "DTU"
+    ],
+    "Linkedin Profile (if interested)": [
+      "https://www.linkedin.com/in/aryan-gupta-809509224"
+    ],
+    "CV/Resume (if interested)": [],
+    "CGPA at the time of Selection (if interested) ": [
+      "8.81"
+    ],
+    "Company Appeared For": [
+      "Cisco"
+    ],
+    "Placement Profile": [
+      "SDE"
+    ],
+    "Mode of Online Assessment": [
+      "Online"
+    ],
+    "Online Assessment Difficulty (out of 5)": [
+      "2"
+    ],
+    "Online Assessment Round Questions": [
+      "Mostly LC mediums"
+    ],
+    "Mode of Interview(s)": [
+      "Online"
+    ],
+    "Number of Interview Rounds": [
+      "2"
+    ],
+    "Interview Experience": [
+      "I was asked for a short introduction followed by questions on computer fundamentals which included scheduling algorithms in OS, basic OOP concepts. \nWrt DSA questions were around Linked List reversal and finding position of loop.\nIn the second/managerial round there was a discussion around my projects followed by a puzzle question: https://www.geeksforgeeks.org/puzzle-13-100-prisoners-with-redblack-hats/\n\n"
+    ],
+    "Level of Difficulty of Interview(s)": [
+      "3"
+    ],
+    "Tips/Sources for Interview Preparation": [
+      "Online interview archives"
+    ],
+    "Were Society Position of Responsibility given any Importance?": [
+      "No"
+    ],
+    "Did the Interviewer(s) Focus on asking questions from CV/Resume": [
+      "Yes"
+    ],
+    "Were the interview questions relevant to the JD Circulated? (if applicable)": [],
+    "Any other relevant information": []
+  }
+}

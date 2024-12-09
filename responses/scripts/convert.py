@@ -1,5 +1,6 @@
 import os
 import json
+import sys
 
 def get_latest_response_file(responses_folder):
     files = os.listdir(responses_folder)
@@ -34,6 +35,7 @@ def convert_to_markdown(latest_file_path):
     markdown_content = f"---\n"
     
     name = data["data"].get("Name", None)
+    college = data["data"].get("College", None)
     company = data["data"].get("Company Appeared For", None)
     linkedin = data["data"].get("Linkedin Profile (if interested)", None)
     placement_profile = data["data"].get("Placement Profile", None)
@@ -43,8 +45,8 @@ def convert_to_markdown(latest_file_path):
     if name and company:
         markdown_content += f'title: "{name} - {company}"\n'
         markdown_content += f'summary: Read about my interview experience at {company}\n'
-        markdown_content += f'aliases: ["/{"-".join(name.lower().split(" "))}-{company.lower()}"]\n'
-        markdown_content += f'tags: ["{company}"]\n'
+        markdown_content += f'aliases: ["/{"-".join(name.lower().split(" "))}-{company.lower()}-{college.lower()}"]\n'
+        markdown_content += f'tags: ["{company}", "{college}"]\n'
     
     if timestamp:
         markdown_content += f'date: "{timestamp}"\n'
@@ -57,6 +59,9 @@ def convert_to_markdown(latest_file_path):
     
     if company:
         markdown_content += f'companies: ["{company}"]\n'
+
+    if college:
+        markdown_content += f'colleges: ["{college}"]\n'
     
     if placement_profile:
         markdown_content += f'profiles: ["{placement_profile}"]\n'
@@ -87,7 +92,12 @@ def save_as_content_file(file_name, markdown_string):
 
 responses_folder = "responses"
 output_folder = "content/responses/bluebook"
-latest_file_path = get_latest_response_file(responses_folder=responses_folder)
+
+if len(sys.argv) > 1:
+    latest_file_path = sys.argv[1]
+else:
+    latest_file_path = get_latest_response_file(responses_folder=responses_folder)
+
 print(latest_file_path)
 if not latest_file_path:
     print("No Valid Files Found in this Commit.")

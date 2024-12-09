@@ -34,13 +34,13 @@ def convert_to_markdown(latest_file_path):
 
     markdown_content = f"---\n"
     
-    name = data["data"].get("Name", None)
-    college = data["data"].get("College", None)
-    company = data["data"].get("Company Appeared For", None)
-    linkedin = data["data"].get("Linkedin Profile (if interested)", None)
-    placement_profile = data["data"].get("Placement Profile", None)
-    email = data.get("email", None)
-    timestamp = data.get("timestamp", None)
+    name = data["data"].get("Name", "").strip() or None
+    college = data["data"].get("College", "").strip() or None
+    company = data["data"].get("Company Appeared For", "").strip() or None
+    linkedin = data["data"].get("Linkedin Profile (if interested)", "").strip() or None
+    placement_profile = data["data"].get("Placement Profile", "").strip() or None
+    email = data.get("email", "").strip() or None
+    timestamp = data.get("timestamp", "").strip() or None
     
     if name and company:
         markdown_content += f'title: "{name} - {company}"\n'

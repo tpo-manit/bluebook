@@ -1,0 +1,53 @@
+{
+  "timestamp": "2024-12-10T12:24:49.498Z",
+  "email": "211112234@stu.manit.ac.in",
+  "data": {
+    "Name": [
+      "Mohit Mahor"
+    ],
+    "College": [
+      "Maulana Azad National Institute of Technology Bhopal "
+    ],
+    "Linkedin Profile (if interested)": [],
+    "CV/Resume (if interested)": [],
+    "CGPA at the time of Selection (if interested) ": [
+      "8.50"
+    ],
+    "Company Appeared For": [
+      "Oracle "
+    ],
+    "Placement Profile": [
+      "SDE"
+    ],
+    "Mode of Online Assessment": [
+      "Online"
+    ],
+    "Online Assessment Difficulty (out of 5)": [
+      "3"
+    ],
+    "Online Assessment Round Questions": [
+      "1 coding question and 30 mcqs. Coding question was based on dp and difficulty level was medium.  "
+    ],
+    "Mode of Interview(s)": [
+      "Offline"
+    ],
+    "Number of Interview Rounds": [
+      "4"
+    ],
+    "Interview Experience": [
+      "There are 3 technical rounds and 1 hr round. 1st round was based on my project. They asked me to implement an additional feature in my project. 2nd round was based on system design. 3rd round was based on dsa and core subjects."
+    ],
+    "Level of Difficulty of Interview(s)": [
+      "3"
+    ],
+    "Tips/Sources for Interview Preparation": [],
+    "Were Society Position of Responsibility given any Importance?": [
+      "No"
+    ],
+    "Did the Interviewer(s) Focus on asking questions from CV/Resume": [
+      "Yes"
+    ],
+    "Were the interview questions relevant to the JD Circulated? (if applicable)": [],
+    "Any other relevant information": []
+  }
+}

@@ -62,5 +62,12 @@
       <guid>https://pavit.xyz/bluebook/responses/bluebook/response_1_2024-12-03/</guid>
       <description>Read about my interview experience at Cisco</description>
     </item>
+    <item>
+      <title>Auto Authorization Guide (for colleges that don&#39;t use google workspace)</title>
+      <link>https://pavit.xyz/bluebook/authorization-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://pavit.xyz/bluebook/authorization-guide/</guid>
+      <description>Authorization Guide</description>
+    </item>
   </channel>
 </rss>

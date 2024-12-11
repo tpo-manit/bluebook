@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Auto Authorization Guide (for colleges that don&#39;t use google workspace) | Bluebook</title>
+<title>Auto Authorization Guide | Bluebook</title>
 <meta name="keywords" content="">
-<meta name="description" content="Authorization Guide">
+<meta name="description" content="Authorization Guide for colleges that don&rsquo;t use google workspace">
 <meta name="author" content="Created by Pavit C
 ">
 <link rel="canonical" href="https://pavit.xyz/bluebook/authorization-guide/">
@@ -30,15 +30,15 @@
     </style>
 </noscript><meta property="og:url" content="https://pavit.xyz/bluebook/authorization-guide/">
   <meta property="og:site_name" content="Bluebook">
-  <meta property="og:title" content="Auto Authorization Guide (for colleges that don&#39;t use google workspace)">
-  <meta property="og:description" content="Authorization Guide">
+  <meta property="og:title" content="Auto Authorization Guide">
+  <meta property="og:description" content="Authorization Guide for colleges that don’t use google workspace">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
       <meta property="og:image" content="https://pavit.xyz/bluebook/images/papermod-cover.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://pavit.xyz/bluebook/images/papermod-cover.png">
-<meta name="twitter:title" content="Auto Authorization Guide (for colleges that don&#39;t use google workspace)">
-<meta name="twitter:description" content="Authorization Guide">
+<meta name="twitter:title" content="Auto Authorization Guide">
+<meta name="twitter:description" content="Authorization Guide for colleges that don&rsquo;t use google workspace">
 
 
 <script type="application/ld+json">
@@ -49,7 +49,7 @@
     {
       "@type": "ListItem",
       "position":  1 ,
-      "name": "Auto Authorization Guide (for colleges that don't use google workspace)",
+      "name": "Auto Authorization Guide",
       "item": "https://pavit.xyz/bluebook/authorization-guide/"
     }
   ]
@@ -59,14 +59,14 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Auto Authorization Guide (for colleges that don't use google workspace)",
-  "name": "Auto Authorization Guide (for colleges that don\u0027t use google workspace)",
-  "description": "Authorization Guide",
+  "headline": "Auto Authorization Guide",
+  "name": "Auto Authorization Guide",
+  "description": "Authorization Guide for colleges that don\u0026rsquo;t use google workspace",
   "keywords": [
     
   ],
-  "articleBody": " To get your email auto authorized (for colleges that don’t use google workspace) please send your non academic email (that you want to use) in body of the email using your academic email to bluebook.auth@gmail.com.\nPlease note that only one proxy email (non academic email) is allowed per academic email.\n",
-  "wordCount" : "50",
+  "articleBody": "Please note that this is only intended for people that have an Academic Email but can’t use it because their university doesn’t use Google Workspace.\nTo get your email auto authorized please send your non academic email (that you want to use) in body of the email using your academic email to bluebook.auth@gmail.com.\nPlease note that only one proxy email (non academic email) is allowed per academic email.\nHow it works We use an AppScript to check for new emails from (*.ac.in) domain emails. Whenever there is a new email we parse out the proxy email from body using regex. We check if there is already a proxy email registered for this academic email, if yes we send back an email telling this to the requesting user. Otherwise we add the proxy email to our DB and allow the Google Form to Validate your proxy email by updating the regex through GForm API. Please comment below if you require any clarifications or have any doubts.\n",
+  "wordCount" : "165",
   "inLanguage": "en",
   "image": "https://pavit.xyz/bluebook/images/papermod-cover.png","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
@@ -166,22 +166,38 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://pavit.xyz/bluebook/">Home</a></div>
     <h1 class="post-title entry-hint-parent">
-      Auto Authorization Guide (for colleges that don&#39;t use google workspace)
+      Auto Authorization Guide
     </h1>
     <div class="post-meta">1 min&nbsp;·&nbsp;Created by Pavit C
 
 
 </div>
-  </header> 
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
 
-  <div class="post-content"><ul>
-<li>
-<p>To get your email auto authorized (for colleges that don&rsquo;t use google workspace) please send your non academic email (that you want to use) in body of the email using your academic email to <a href="mailto:bluebook.auth@gmail.com">bluebook.auth@gmail.com</a>.</p>
-</li>
-<li>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#how-it-works" aria-label="How it works">How it works</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>Please note that this is only intended for people that have an Academic Email but can&rsquo;t use it because their university doesn&rsquo;t use Google Workspace.</p>
+<p>To get your email auto authorized please send your non academic email (that you want to use) in body of the email using your academic email to <a href="mailto:bluebook.auth@gmail.com">bluebook.auth@gmail.com</a>.</p>
 <p>Please note that only one proxy email (non academic email) is allowed per academic email.</p>
-</li>
+<h3 id="how-it-works">How it works<a hidden class="anchor" aria-hidden="true" href="#how-it-works">#</a></h3>
+<ul>
+<li>We use an AppScript to check for new emails from (*.ac.in) domain emails.</li>
+<li>Whenever there is a new email we parse out the proxy email from body using regex.</li>
+<li>We check if there is already a proxy email registered for this academic email, if yes we send back an email telling this to the requesting user.</li>
+<li>Otherwise we add the proxy email to our DB and allow the Google Form to Validate your proxy email by updating the regex through GForm API.</li>
 </ul>
+<p>Please comment below if you require any clarifications or have any doubts.</p>
 
 
   </div>

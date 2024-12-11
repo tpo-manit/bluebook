@@ -77,11 +77,11 @@
       <description>Read about my interview experience at Cisco</description>
     </item>
     <item>
-      <title>Auto Authorization Guide (for colleges that don&#39;t use google workspace)</title>
+      <title>Auto Authorization Guide</title>
       <link>https://pavit.xyz/bluebook/authorization-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://pavit.xyz/bluebook/authorization-guide/</guid>
-      <description>Authorization Guide</description>
+      <description>Authorization Guide for colleges that don&amp;rsquo;t use google workspace</description>
     </item>
   </channel>
 </rss>

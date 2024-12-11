@@ -80,11 +80,9 @@ params:
 
       - Click on the [link icon (🔗)](https://forms.gle/BVd4dQfg6Y9TWmHb8) below to fill in your response.
 
-      - **PLEASE NOTE THAT YOUR RESPONSE WILL BE REJECTED IF YOU DON'T USE AN ACADEMIC EMAIL (*.ac.in) OR AN AUTHORIZED EMAIL**
+      - **PLEASE NOTE THAT YOUR RESPONSE WILL BE REJECTED IF YOU DON'T USE AN ACADEMIC EMAIL (*.ac.in) OR AN AUTHORIZED EMAIL.**
 
-      - To get your email auto authorized (for colleges that don't use google workspace) please send your non academic email (that you want to use) using your academic email to [bluebook.auth@gmail.com](mailto:bluebook.auth@gmail.com).
-      
-      - Please note that only one proxy email is allowed per academic email.
+      - [Click here (🔗) to see how to get your email auto-authorized.](/authorization-guide)
 
   socialIcons:
     - name: github3

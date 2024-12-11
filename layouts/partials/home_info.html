@@ -1,0 +1,47 @@
+<style>
+    .warning-message {
+      display: inline-block;
+      background-color: #321820;
+      border: 2px solid #693B44;
+      color: #EB9CA6;
+      padding: 0.5rem 0.75rem;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.5;
+      margin-top: 0.5rem;
+    }
+
+    .entry-content a {
+      display: inline-block;
+      background-color: #28393E;
+      border: 2px solid #525C60;
+      color: #A0EEEE;
+      padding: 0.5rem 0.75rem;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.5;
+      margin-top: 0.5rem;
+    }
+    .entry-content ul:first-of-type li:last-of-type a {
+        margin-top: 1rem;
+    }
+
+</style>
+
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ .BeforeBoxContent | markdownify }}
+        <div class="warning-message">{{ .WarningBoxContent | markdownify }}</div>
+        {{ .AfterBoxContent | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+</article>
+{{- end -}}

@@ -1,1 +1,0 @@
-- RED color se tell ki auto auth and the rejected thing in header cus it doesn't look good

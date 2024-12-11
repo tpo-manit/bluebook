@@ -23,6 +23,10 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install Dependencies
+        run: |
+          pip install -r responses/scripts/requirements.txt
+
       - name: Run conversion script
         run: python responses/scripts/convert.py
 

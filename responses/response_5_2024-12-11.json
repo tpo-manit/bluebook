@@ -1,0 +1,64 @@
+{
+  "timestamp": "2024-12-11T15:44:50.541Z",
+  "email": "iec2021066@iiita.ac.in",
+  "data": {
+    "Name": [
+      "Pavitra Pandey"
+    ],
+    "Email": [
+      "iec2021066@iiita.ac.in"
+    ],
+    "College": [
+      "IIIT Allahabad"
+    ],
+    "Linkedin Profile (if interested)": [
+      "https://linkedin.com/in/pvtr/"
+    ],
+    "CV/Resume (if interested)": [
+      "[https://drive.google.com/file/d/100lMJcid1ke9HJWCPgzunBPbBIxR6JNL/view?usp=sharing](https://drive.google.com/file/d/100lMJcid1ke9HJWCPgzunBPbBIxR6JNL/view?usp=sharing)"
+    ],
+    "CGPA at the time of Selection (if interested) ": [
+      "8.32"
+    ],
+    "Company Appeared For": [
+      "D.E. Shaw"
+    ],
+    "Placement Profile": [
+      "Winter Internship"
+    ],
+    "Mode of Online Assessment": [
+      "Online"
+    ],
+    "Online Assessment Difficulty (out of 5)": [
+      "4"
+    ],
+    "Online Assessment Round Questions": [
+      "OA had 3 sections CS Fundamentals, Aptitude and Programming\nEach of the sections and each of the programming problems were separately timed i.e., you could not go back to any previous problem once you have moved ahead.\n\n3 programming problems, 2 were on graphs and 1 on dynamic programming. I solved 2 completely and one partially.\n\nCS fundamentals and Aptitude were medium-ish but key was to solve them quickly "
+    ],
+    "Mode of Interview(s)": [
+      "Online"
+    ],
+    "Number of Interview Rounds": [
+      "2"
+    ],
+    "Interview Experience": [
+      "Both the rounds were of ~1.5 hours\n\nRound 1 - I was asked 3 programming problem, the interviewers were only interested in the logic and didn't ask me to write down the code. We also had discussion on in depth OOPS, like virtual keyword, dynamic/static casting. I was also asked to a LLD of salary and increments of a people in a organisation based upon there roles\n\nRound 2 - Initially the interviewer asked me about my summer internship and projects. Then I was asked 2 programming problems and again the interviewers were only interested in the logic. Then I was asked in depth on CS Fundamentals - OS, DBMS . "
+    ],
+    "Level of Difficulty of Interview(s)": [
+      "4"
+    ],
+    "Tips/Sources for Interview Preparation": [],
+    "Were Society Position of Responsibility given any Importance?": [
+      "Maybe, can't tell certainly"
+    ],
+    "Did the Interviewer(s) Focus on asking questions from CV/Resume": [
+      "Yes"
+    ],
+    "Were the interview questions relevant to the JD Circulated? (if applicable)": [
+      "Yes"
+    ],
+    "Any other relevant information": [
+      "Verdict - Selected"
+    ]
+  }
+}

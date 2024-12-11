@@ -21,21 +21,6 @@ jobs:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
 
-    - name: Validate Email Domain
-      id: email-validation
-      run: |
-        python responses/scripts/checkEmail.py
-        echo "::set-output name=is_valid::$?"
-      shell: bash
-    
-    - name: Close PR if Invalid
-      if: steps.email-validation.outputs.is_valid != '0'
-      env:
-        GH_TOKEN: ${{ secrets.PAT }}
-      run: |
-        gh pr close ${{ github.event.pull_request.number }} --delete-branch
-        exit 0
-
     # Cache Ollama Installation
     - name: Cache Ollama installation
       id: cache-ollama

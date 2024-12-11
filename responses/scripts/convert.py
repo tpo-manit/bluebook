@@ -2,6 +2,27 @@ import os
 import json
 import sys
 from datetime import datetime
+import requests
+import base64
+import json
+
+def fetch_authorized_emails_from_github():
+    url = "https://api.github.com/repos/tpo-manit/bluebook/contents/authorized_external_emails.json?ref=emails"
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            file_info = response.json()
+            content_base64 = file_info.get('content')
+            content = base64.b64decode(content_base64).decode('utf-8')
+            authorized_emails = json.loads(content)    
+            return authorized_emails
+        else:
+            print(f"Error: Unable to fetch file. Status code: {response.status_code}")
+            return None
+    
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return None
 
 def get_latest_response_file(responses_folder):
     files = os.listdir(responses_folder)
@@ -42,6 +63,8 @@ def convert_to_markdown(latest_file_path):
     
     data = convert_to_key_value_pair(data)
 
+    email_map = fetch_authorized_emails_from_github()
+
     markdown_content = f"---\n"
     
     name = data["data"].get("Name", "").strip() or None
@@ -77,7 +100,7 @@ def convert_to_markdown(latest_file_path):
         markdown_content += f'profiles: ["{placement_profile}"]\n'
     
     if name and email:
-        markdown_content += f'author: ["{name} - {email}"]\n'
+        markdown_content += f'author: ["{name} - {email if email.endswith(".ac.in") else email_map[email]}"]\n'
     
     markdown_content += f"---\n"
     markdown_content += f"---\n"
@@ -86,6 +109,7 @@ def convert_to_markdown(latest_file_path):
     question_number = 1
 
     for key in data["data"]:
+        if(key.lower()=="email"): continue
         markdown_content += f'{question_number}. ### {key}\n\n'
         markdown_content += f'> '
         markdown_content += (f'{{{{< collapse summary="Expand" >}}}}\n\n{data["data"][key]}\n\n{{{{< /collapse >}}}}\n' 

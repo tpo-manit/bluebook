@@ -1,0 +1,62 @@
+{
+  "timestamp": "2024-12-12T03:10:57.661Z",
+  "email": "iec2021066@iiita.ac.in",
+  "data": {
+    "Name": [
+      "Pavitra Pandey"
+    ],
+    "Email": [
+      "iec2021066@iiita.ac.in"
+    ],
+    "College": [
+      "IIIT Allahabad"
+    ],
+    "Linkedin Profile (if interested)": [
+      "https://linkedin.com/in/pvtr"
+    ],
+    "CV/Resume (if interested)": [
+      "[https://drive.google.com/file/d/1GjJAnQbHcQWaSR8DAcoLLM6mYeadfLgO/view?usp=sharing](https://drive.google.com/file/d/1GjJAnQbHcQWaSR8DAcoLLM6mYeadfLgO/view?usp=sharing)"
+    ],
+    "CGPA at the time of Selection (if interested) ": [
+      "8.32"
+    ],
+    "Company Appeared For": [
+      "Rubrik"
+    ],
+    "Placement Profile": [
+      "Winter Internship"
+    ],
+    "Mode of Online Assessment": [
+      "Online"
+    ],
+    "Online Assessment Difficulty (out of 5)": [
+      "5"
+    ],
+    "Online Assessment Round Questions": [
+      "Extremely hard OA, 4 questions equivalent to Div2D on Codeforces. 1.5 hours to solve the problems. I solved 3 completely and 1 partially. "
+    ],
+    "Mode of Interview(s)": [
+      "Online"
+    ],
+    "Number of Interview Rounds": [
+      "3"
+    ],
+    "Interview Experience": [
+      "Round 1 (1 hour)  - Was asked this [problem](https://codeforces.com/problemset/problem/1404/B). I came up with the observations and coded the solution. The round went smoothly.\n\nRound 2 (1 hour) - The problem I was given was something like - You are given a tree, each node of the node has a string written on it like - \"+ x\" or \"- x\".\nYou from root to each of the nodes in the tree, when you encounter \"+ x\" increase the frequency of \"x\", else decrease. \nFor each node - i, go on path from \"root\" to \"i\" and calculate the least positive frequency number. \n I came up with n log n solution using map and set quickly but the interviewer insisted on a O(n) solution using MFU cache and linked lists.\n\nRound 2 - Although I wasn't able to make it to round 3, but my friends have given it. It is a 15-30 mins Engineering Manager round, the questions are based on your resume and they also ask typical HR questions."
+    ],
+    "Level of Difficulty of Interview(s)": [
+      "4"
+    ],
+    "Tips/Sources for Interview Preparation": [],
+    "Were Society Position of Responsibility given any Importance?": [
+      "Maybe, can't tell certainly"
+    ],
+    "Did the Interviewer(s) Focus on asking questions from CV/Resume": [
+      "No"
+    ],
+    "Were the interview questions relevant to the JD Circulated? (if applicable)": [],
+    "Any other relevant information": [
+      "Verdict - Rejected"
+    ]
+  }
+}

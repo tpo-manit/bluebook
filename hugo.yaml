@@ -98,6 +98,9 @@ params:
     # - name: Github
     #   title: We are Fully Source Available (AGPL)!
     #   url: "https://github.com/tpo-manit/bluebook"
+    - name: RSS
+      title: We have a RSS Feed for all our posts!
+      url: "https://pavit.xyz/bluebook/index.xml"
     - name: Email
       title: Please mail us for any queries!
       url: "mailto:pavitchhabra2000@gmail.com"

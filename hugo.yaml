@@ -69,7 +69,7 @@ params:
   ShowPageNums: true
   ShowToc: true
   comments: true
-  images: ["images/papermod-cover.png"]
+  images: ["images/bluebook-logo.png"]
 
   homeInfoParams:
     Title: "Bluebook"

@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.139.4</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Dec 2024 03:22:16 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Dec 2024 17:22:34 +0000</lastBuildDate>
     <atom:link href="https://pavit.xyz/bluebook/companies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zomato</title>
+      <link>https://pavit.xyz/bluebook/companies/zomato/</link>
+      <pubDate>Fri, 13 Dec 2024 17:22:34 +0000</pubDate>
+      <guid>https://pavit.xyz/bluebook/companies/zomato/</guid>
+      <description></description>
+    </item>
     <item>
       <title>NSE</title>
       <link>https://pavit.xyz/bluebook/companies/nse/</link>

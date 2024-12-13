@@ -1,0 +1,62 @@
+{
+  "timestamp": "2024-12-13T17:22:34.692Z",
+  "email": "211114022@stu.manit.ac.in",
+  "data": {
+    "Name": [
+      "Navneet Kumar"
+    ],
+    "Email": [
+      "211114022@stu.manit.ac.in"
+    ],
+    "College": [
+      "MANIT Bhopal"
+    ],
+    "Linkedin Profile (if interested)": [
+      "https://www.linkedin.com/in/navneet-kumar-323b4924b/"
+    ],
+    "CV/Resume (if interested)": [],
+    "CGPA at the time of Selection (if interested) ": [
+      "8.98"
+    ],
+    "Company Appeared For": [
+      "Zomato"
+    ],
+    "Placement Profile": [
+      "SDE"
+    ],
+    "Mode of Online Assessment": [
+      "Offline"
+    ],
+    "Online Assessment Difficulty (out of 5)": [
+      "3"
+    ],
+    "Online Assessment Round Questions": [
+      "3 coding questions and ~18MCQs\nCoding Questions:\n1. Verify if a triangle is valid or degenerate, given two points, find out if they're inside or outside the triangle(if valid)\n2. A question on arrays (don't remember exactly but something like making an array a palindrome using some operations that involved swapping of adjacent elements)\n3. Implementation based question on strings, too much case work required. (Similar to employees in a mall to be sorted based on their entrance timings, with validating the time and day to be under constraints and other similar case work)\n\nMCQs: Based on CSE fundamentals "
+    ],
+    "Mode of Interview(s)": [
+      "Offline"
+    ],
+    "Number of Interview Rounds": [
+      "3 (2 Tech + 1HR)"
+    ],
+    "Interview Experience": [
+      "Technical Interviews:\nIn both of the technical interviews, there was a brief discussion on CS fundamentals (OOPS, DBMS, CN etc), some basic questions like what happens when you enter zomato.com on a browser where they expected a brief discussion on DNS, protocols involved etc. Gave a few SQL queries, and a question to design a system for effective management of zomato /blinkit drivers with respect to allocation of orders on live/ scheduling basis. Also there was an in-depth discussion on my projects.\n\nIn total 4 DSA questions were asked from Trees/Graphs, Pointers & DP. 2 of them were completely new(medium-high rated), other 2 standard (easy-medium level).\n\nHR Interview:\nDiscussion on career and goals etc, management experience and other formal questions expected in an HR interview were asked"
+    ],
+    "Level of Difficulty of Interview(s)": [
+      "4"
+    ],
+    "Tips/Sources for Interview Preparation": [
+      "Application based DSA questions were asked so better to have a CP background to efficiently tackle them, Other things were based on basic CSE fundamentals. Have a good understanding of your projects"
+    ],
+    "Were Society Position of Responsibility given any Importance?": [
+      "No"
+    ],
+    "Did the Interviewer(s) Focus on asking questions from CV/Resume": [
+      "Yes"
+    ],
+    "Were the interview questions relevant to the JD Circulated? (if applicable)": [
+      "Yes"
+    ],
+    "Any other relevant information": []
+  }
+}

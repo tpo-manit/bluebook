@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Summer Internship on Bluebook</title>
-    <link>https://pavit.xyz/bluebook/profiles/summer-internship/</link>
+    <link>https://bluebook.pavit.xyz/profiles/summer-internship/</link>
     <description>Recent content in Summer Internship on Bluebook</description>
     <image>
       <title>Bluebook</title>
-      <url>https://pavit.xyz/bluebook/bluebook-logo.png</url>
-      <link>https://pavit.xyz/bluebook/bluebook-logo.png</link>
+      <url>https://bluebook.pavit.xyz/bluebook-logo.png</url>
+      <link>https://bluebook.pavit.xyz/bluebook-logo.png</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 11 Dec 2024 10:40:14 +0000</lastBuildDate>
-    <atom:link href="https://pavit.xyz/bluebook/profiles/summer-internship/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bluebook.pavit.xyz/profiles/summer-internship/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pavitra Pandey - Arcesium</title>
-      <link>https://pavit.xyz/bluebook/responses/bluebook/response_4_2024-12-11/</link>
+      <link>https://bluebook.pavit.xyz/responses/bluebook/response_4_2024-12-11/</link>
       <pubDate>Wed, 11 Dec 2024 10:40:14 +0000</pubDate>
-      <guid>https://pavit.xyz/bluebook/responses/bluebook/response_4_2024-12-11/</guid>
+      <guid>https://bluebook.pavit.xyz/responses/bluebook/response_4_2024-12-11/</guid>
       <description>Read about my interview experience at Arcesium</description>
     </item>
     <item>
       <title>Raghav Arora - UnifyApps</title>
-      <link>https://pavit.xyz/bluebook/responses/bluebook/response_19_2024-12-10/</link>
+      <link>https://bluebook.pavit.xyz/responses/bluebook/response_19_2024-12-10/</link>
       <pubDate>Tue, 10 Dec 2024 08:11:13 +0000</pubDate>
-      <guid>https://pavit.xyz/bluebook/responses/bluebook/response_19_2024-12-10/</guid>
+      <guid>https://bluebook.pavit.xyz/responses/bluebook/response_19_2024-12-10/</guid>
       <description>Read about my interview experience at UnifyApps</description>
     </item>
     <item>
       <title>Pavit Chhabra - Cisco</title>
-      <link>https://pavit.xyz/bluebook/responses/bluebook/response_1_2024-12-03/</link>
+      <link>https://bluebook.pavit.xyz/responses/bluebook/response_1_2024-12-03/</link>
       <pubDate>Tue, 03 Dec 2024 21:28:11 +0000</pubDate>
-      <guid>https://pavit.xyz/bluebook/responses/bluebook/response_1_2024-12-03/</guid>
+      <guid>https://bluebook.pavit.xyz/responses/bluebook/response_1_2024-12-03/</guid>
       <description>Read about my interview experience at Cisco</description>
     </item>
   </channel>

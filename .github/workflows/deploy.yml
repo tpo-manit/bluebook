@@ -38,7 +38,7 @@ jobs:
         run: |
           mkdir -p ${GITHUB_WORKSPACE}/built-site/bluebook
           cp -R public/* ${GITHUB_WORKSPACE}/built-site/bluebook/
-          cd ${GITHUB_WORKSPACE}/built-site
+          cd ${GITHUB_WORKSPACE}/built-site/bluebook/
           git add .
           git config user.name 'tpo-manit'
           git config user.email 'tpomanit16@gmail.com'
